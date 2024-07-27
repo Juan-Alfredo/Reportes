@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+}
+
+#Principal_Form {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+#table1 {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+#table2 {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+h2 {
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #4b42423f;
+  padding: 6px;
+  text-align: left;
+  background-color: #fff;
+}
+
+th {
+  background-color: #eeece1;
+}
+
+select {
+  border: 1px solid #423b3b3f;
+  outline: none;
+}
+
+input {
+  border: 1px solid #423b3b3f;
+  outline: none;
+}
+
+#zona {
+  width: auto;
+}
+
+#titulo_incidente {
+  width: 100%;
+  border: none;
+}
+
+#nombre_operador {
+  width: 90%;
+}
+
+#supervisores_informados {
+  width: 90%;
+}
+
+#seguimiento_falla {
+  width: 90%;
+}
+
+#sede {
+  width: 90%;
+}
+
+#boton_registrar {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #007bff;
+  /* Color base del botón */
+  transition: transform 0.3s ease-in-out;
+}
+
+#boton_registrar:hover {
+  background-color: #0056b3;
+}
+
+#boton_registrar:active {
+  transform: scale(0.9);
+  /* Reduce ligeramente el tamaño del botón 
+  cuando se hace clic */
+}
+
+#boton_previsualizar {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #099e16;
+  /* Color base del botón */
+  transition: transform 0.3s ease-in-out;
+}
+
+#boton_previsualizar:hover {
+  background-color: #025c0b;
+}
+
+#boton_previsualizar:active {
+  transform: scale(0.9);
+  /* Reduce ligeramente el tamaño 
+  del botón cuando se hace clic */
+}
+
+#Registro_Exitoso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: showMessage 1s forwards;
+  width: 50%;
+}
+
+#Registro_Exitoso .checkmark {
+  font-size: 2rem;
+  margin-right: 10px;
+  animation: scaleCheck 0.5s ease-in-out forwards;
+}
+
+@keyframes showMessage {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleCheck {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
